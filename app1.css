@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 209, 148);
+
+}
+
+.container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    gap:40px;
+}
+
+.container h1{
+    font-size: 40px;
+    font-weight: 100;
+    color:#333;
+    width: 100%;
+    text-align: center;
+}
+
+.container div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container div span{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    font-size: 30px;
+}
+
+.container .rate{
+    background-color: darkorange;
+    color:white;
+
+}
+
+.container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:20px;
+}
+
+.container form input, button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    outline: none;
+    border:1px solid mediumaquamarine;
+}
+
+.container form input::placeholder{
+    font-weight: 100;
+    color:#999;
+}
+
+.container button{
+    font-size: 30px;
+    background-color: #ccc;
+    border:1px solid transparent;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+}
+
+.container button:hover{
+background-color: #666;
+color:white;
+}
+
+.container p{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:#333;
+    gap:30px;
+}
+
+.container p span{
+    color:darkorange;
+}
+
+
+@media(max-width:450px){
+    .container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        gap:40px;
+    }
+}
